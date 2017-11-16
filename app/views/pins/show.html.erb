@@ -1,12 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <p id="notice"><%= notice %></p>
+</div>
 
-<p>
-  <%= image_tag @pin.image.url(:medium) %>
-  <%= @pin.description %>
-</p>
+<div class="row">
 
-<% if @pin.user == current_user %>
-  <%= link_to 'Edit', edit_pin_path(@pin) %> |
-  <%= link_to 'Destroy', @pin, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<% end %>
-<%= link_to 'Back', pins_path %>
+  <div class="col">
+      <div class="row">
+        <div class="col text-center">
+          <%= image_tag @pin.image.url(:medium) %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center bg-dark p-3 text-white mt-5">
+          <%= @pin.description %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-5">
+  <div class="col text-center">
+    <% if @pin.user == current_user %>
+      <%= link_to 'Edit', edit_pin_path(@pin) %> |
+      <%= link_to 'Destroy', @pin, method: :delete, data: { confirm: 'Are you sure?' } %> |
+    <% end %>
+    <%= link_to 'Back', pins_path, class: "btn btn-dark" %>
+  </div>
+</div>

@@ -6,15 +6,13 @@
   <% @pins.each do |pin| %>
 
     <div class="col">
-      <div class="card m-5">
+      <div class="card m-5 border-dark">
 
         <div class="card-body image-cropper text-center">
-          <div class="">
-            <%= link_to image_tag(pin.image.url(:medium), class: "pin-image"), pin %>
-          </div>
+          <%= link_to image_tag(pin.image.url(:medium), class: "pin-image"), pin %>
         </div>
 
-        <div class="card-footer">
+        <div class="card-footer bg-dark text-white text-center">
           <%= pin.description %>
         </div>
 
