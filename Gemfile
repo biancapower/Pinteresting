@@ -9,12 +9,17 @@ end
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails'
 gem 'devise'
+
 #gem "paperclip", "~> 5.0.0"
-#uses the pull request that makes paperclip (more) compatible with the new
-#aws-sdk-s3 gem
+#uses the pull request that makes paperclip (more) compatible with the new aws-sdk-s3 gem
 #once the pull request is merged in to master this can be simplified
 gem "paperclip", :git => 'git://github.com/morgoth/paperclip.git', :ref => 'd53818'
 gem 'aws-sdk-s3', '~> 1', group: :production
+
+
+
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record

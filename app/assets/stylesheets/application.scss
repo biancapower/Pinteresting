@@ -1,1 +1,14 @@
 @import "bootstrap";
+
+.image-cropper {
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+}
+
+.pin-image {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
