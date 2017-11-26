@@ -1,25 +1,5 @@
-# README
+# Pinteresting
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Live app: https://pinteresting-au.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# pinteresting
+This is a Pinterest-like website built using Ruby on Rails. It implements Amazon S3 storage, integrated with Paperclip. Devise is used for user signup and signin.
